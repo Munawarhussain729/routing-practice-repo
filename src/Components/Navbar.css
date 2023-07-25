@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: gray;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid #ccc; /* Added a border instead of shadow */
+    
+   
+}
+
+.HOVER, .HOVER3 {
+    width: 100px;
+    height: 100%;
+    color: #333; /* Dark grey for contrast against transparent background */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    position: relative; /* Will be useful for hover effect */
+}
+
+.HOVER:before, .HOVER3:before { /* Creating a pseudo-element for the hover effect */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.HOVER:hover, .HOVER3:hover {
+    color: #ff7f50; /* Orange color on hover */
+    transform: translateY(-5px); 
+}
+
+.HOVER:hover:before, .HOVER3:hover:before {
+    transform: scaleX(1); /* This will create an underline effect on hover */
+}
+
+.fields a {
+    text-decoration: none;
+    color: #333; /* Dark grey color */
+}
+
+
+
+.Nav{
+    background:black;
+    color:white;
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    transition: width 0.8s ease-in-out 0.8s; 
+    transform: skewX(338deg);
+    transform-origin: right top;
+}
+.Nav:hover{
+    width:200px;
+   
+
+}
+
+ @media (max-width: 600px) {
+    .fields {
+        flex-wrap: wrap;
+    }
+
+   
+    .Nav {
+       transform: none;      
+        text-align: center;
+        width: 22%;
+    }
+    .Nav:hover{width: 22%;}
+
+    .HOVER, .HOVER3 {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.Home,.Contact,.About
+{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    height:100px
+}
+
