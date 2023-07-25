@@ -1,0 +1,37 @@
+header{
+    height: 80px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 2px solid black; */
+}
+
+.topbar{
+    display: flex;
+    align-items: center;
+}
+
+.top1stbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-left: 50px;
+    
+}
+
+.top1stbox p:hover{
+    border-top:2px solid brown;
+}
+
+.top1stbox i{
+    margin-left: 5px;
+}
+
+
+
+.maintitle{
+    margin-left: 50rem;
+}
+
