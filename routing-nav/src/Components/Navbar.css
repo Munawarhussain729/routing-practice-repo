@@ -1,0 +1,53 @@
+.Nav{
+    color: wheat;
+background-color:rgb(189, 122, 122);
+height:70px;
+list-style-type: none;
+list-style-type: none;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(172, 129, 129);
+    overflow: hidden;
+    justify-content: flex-end;
+    
+    box-shadow: 0px 5px 10px 0px rgba(19, 17, 17, 0.5); 
+
+  }
+  
+/* li{
+    
+    float:right;
+} */
+li a {
+    color: whitesmoke;
+    display: flex;
+    padding: 29px;
+    font-size:20px;
+    text-decoration: none;
+    }
+
+   
+
+    li a:hover{
+        background-color: rgb(185, 169, 169);
+    }
+    li a :active{
+        background-color: rgb(138, 182, 138);
+    }
+
+
+    .logo {
+        
+        align-items: center;
+        display: flex;
+        margin-right: 980px;
+      }
+      
+    .logo img {
+        width: 200px; /* Adjust the width to your logo size */
+        height:auto; /* Maintain the aspect ratio of the logo */
+      }

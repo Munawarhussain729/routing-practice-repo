@@ -1,0 +1,36 @@
+.Nav{
+    color: wheat;
+background-color:rgb(31, 31, 31);
+height:70px;
+list-style-type: none;
+box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(31, 31, 31);
+    overflow: hidden;
+  }
+  
+li{
+    
+    float:left;
+}
+li a {
+    color: whitesmoke;
+    display: flex;
+    padding: 25px;
+    font-size:20px;
+    text-decoration: none;
+    }
+
+   
+
+    li a:hover{
+        background-color: rgb(145, 141, 141);
+    }
+    li a :active{
+        background-color: rgb(138, 182, 138);
+    }
